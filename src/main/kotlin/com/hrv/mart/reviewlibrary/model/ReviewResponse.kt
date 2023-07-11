@@ -1,4 +1,4 @@
-package com.hrv.mart.backendreview.model
+package com.hrv.mart.reviewlibrary.model
 
 import com.hrv.mart.userlibrary.model.User
 

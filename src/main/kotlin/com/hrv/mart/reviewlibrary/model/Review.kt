@@ -1,4 +1,4 @@
-package com.hrv.mart.backendreview.model
+package com.hrv.mart.reviewlibrary.model
 
 import org.springframework.data.mongodb.core.index.CompoundIndex
 import org.springframework.data.mongodb.core.mapping.Document
