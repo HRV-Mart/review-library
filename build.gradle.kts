@@ -18,6 +18,14 @@ java {
 
 repositories {
 	mavenCentral()
+	maven {
+		name = "GitHubPackages"
+		url = uri("https://maven.pkg.github.com/hrv-mart/user-library")
+		credentials {
+			username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+			password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+		}
+	}
 }
 detekt {
 	toolVersion = "1.23.0"
@@ -35,6 +43,8 @@ dependencies {
 	testImplementation("io.projectreactor:reactor-test")
 	// Detekt plugin
 	detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.0")
+	// HRV-Mart
+	implementation("com.hrv.mart:user-library:0.0.3")
 }
 
 tasks.withType<KotlinCompile> {
