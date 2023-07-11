@@ -8,6 +8,7 @@ class ReviewLibraryApplicationTests {
 
 	@Test
 	fun contextLoads() {
+		main(emptyArray())
 	}
 
 }
