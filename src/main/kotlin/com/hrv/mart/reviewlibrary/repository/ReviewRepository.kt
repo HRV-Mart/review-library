@@ -4,6 +4,7 @@ import com.hrv.mart.apicall.APICaller
 import com.hrv.mart.custompageable.model.Pageable
 import com.hrv.mart.custompageable.model.QueryParams
 import com.hrv.mart.reviewlibrary.model.Review
+import com.hrv.mart.reviewlibrary.model.ReviewFilterParam
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.server.reactive.ServerHttpResponse
 import org.springframework.stereotype.Repository
@@ -39,6 +40,7 @@ class ReviewRepository (
                 response
             )
     fun getReviews(
+        reviewFilterParam: ReviewFilterParam,
         queryParams: QueryParams,
         size: Optional<Int>,
         page: Optional<Int>,
@@ -46,10 +48,8 @@ class ReviewRepository (
     ) =
         apiCall
             .getData(
-                "",
+                reviewServerUrl+reviewFilterParam.getQueryParamForURL(),
                 Pageable::class.java,
                 response
             )
-
-
 }
