@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 
 @Document("Review")
 @CompoundIndex(
-    name = "reviw_idx",
+    name = "review_idx",
     def = "{'userId': 1, 'productId': 1}",
     unique = true
 )
