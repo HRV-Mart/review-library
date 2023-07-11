@@ -15,8 +15,7 @@ on:
 env:
   USERNAME: ${{ secrets.OSSRH_USERNAME }}
   TOKEN: ${{ secrets.OSSRH_TOKEN }}
-  ORDER_URL: http://localhost:8085
-  KAFKA_SERVER: localhost:9092
+  REVIEW_URL: http://localhost:8086
 jobs:
   build:
     name: Build

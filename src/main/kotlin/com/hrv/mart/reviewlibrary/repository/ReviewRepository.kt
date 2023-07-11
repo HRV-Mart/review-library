@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository
 import org.springframework.web.reactive.function.client.WebClient
 import java.util.*
 
-
 @Repository
 class ReviewRepository (
     @Value("\${hrv.mart.review.url}")
@@ -35,7 +34,7 @@ class ReviewRepository (
     ) =
         apiCall
             .deleteData(
-                "$reviewServerUrl/{userId}/{productId}",
+                "$reviewServerUrl/$userId/$productId",
                 String::class.java,
                 response
             )
