@@ -15,7 +15,7 @@ jobs:
           script: |
             github.rest.issues.createComment({
               issue_number: context.issue.number,
-              owner: context.repo.owner,
+              owner: dependabot,
               repo: context.repo.repo,
               body: '@dependabot squash and merge'
             })
