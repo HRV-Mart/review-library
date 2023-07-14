@@ -6,7 +6,7 @@ plugins {
 	//Detekt
 	id("io.gitlab.arturbosch.detekt") version("1.23.0")
 	kotlin("jvm") version "1.9.0"
-	kotlin("plugin.spring") version "1.8.22"
+	kotlin("plugin.spring") version "1.9.0"
 }
 
 group = "com.hrv.mart"
