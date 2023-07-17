@@ -8,7 +8,7 @@ on:
 jobs:
   comment:
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.CREATE_COMMENT_SECRET }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
