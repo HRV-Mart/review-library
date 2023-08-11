@@ -4,8 +4,8 @@ plugins {
 	id("org.springframework.boot") version "3.1.2"
 	id("io.spring.dependency-management") version "1.1.3"
 	//Detekt
-	id("io.gitlab.arturbosch.detekt") version("1.23.0")
-	kotlin("jvm") version "1.8.22"
+	id("io.gitlab.arturbosch.detekt") version("1.23.1")
+	kotlin("jvm") version "1.9.0"
 	kotlin("plugin.spring") version "1.9.0"
 }
 
@@ -28,7 +28,7 @@ repositories {
 	}
 }
 detekt {
-	toolVersion = "1.23.0"
+	toolVersion = "1.23.1"
 	config.setFrom(file("config/detekt/detekt.yml"))
 }
 
