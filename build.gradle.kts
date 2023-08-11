@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
 	id("org.springframework.boot") version "3.1.2"
-	id("io.spring.dependency-management") version "1.1.2"
+	id("io.spring.dependency-management") version "1.1.3"
 	//Detekt
 	id("io.gitlab.arturbosch.detekt") version("1.23.0")
 	kotlin("jvm") version "1.8.22"
@@ -42,7 +42,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	// Detekt plugin
-	detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.0")
+	detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.1")
 	// HRV-Mart
 	implementation("com.hrv.mart:user-library:0.0.3")
 	implementation("com.hrv.mart:api-call:0.0.3")
