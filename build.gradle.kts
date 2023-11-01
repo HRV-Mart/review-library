@@ -42,7 +42,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	// Detekt plugin
-	detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.1")
+	detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.3")
 	// HRV-Mart
 	implementation("com.hrv.mart:user-library:0.0.3")
 	implementation("com.hrv.mart:api-call:0.0.3")
